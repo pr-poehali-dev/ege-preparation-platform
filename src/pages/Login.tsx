@@ -129,6 +129,16 @@ const Login = () => {
                   </div>
                 </div>
 
+                <div className="text-right">
+                  <Button 
+                    variant="link" 
+                    className="p-0 h-auto text-xs text-muted-foreground hover:text-primary"
+                    onClick={() => navigate('/forgot-password')}
+                  >
+                    Забыли пароль?
+                  </Button>
+                </div>
+
                 <Button type="submit" className="w-full" size="lg">
                   <Icon name="LogIn" className="w-4 h-4 mr-2" />
                   Войти
@@ -157,7 +167,11 @@ const Login = () => {
 
               <div className="text-center text-sm text-muted-foreground">
                 Нет аккаунта?{' '}
-                <Button variant="link" className="p-0 h-auto font-semibold text-primary">
+                <Button 
+                  variant="link" 
+                  className="p-0 h-auto font-semibold text-primary"
+                  onClick={() => navigate('/register')}
+                >
                   Зарегистрироваться
                 </Button>
               </div>
